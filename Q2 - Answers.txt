@@ -1,0 +1,12 @@
+
+1. What is the purpose of normalizing the 'Close' prices before feeding them into the LSTM model?
+
+   Normalizing the 'Close' prices is crucial because it scales the data to a range that is easier for the model to work with, typically between 0 and 1. This helps improve the convergence speed of the training process and ensures that the model does not become biased by the magnitude of the numbers. Normalization also helps in achieving numerical stability and consistent gradients during training.
+
+2. What is the purpose of the Dropout layer in the LSTM model?
+
+   The Dropout layer is used to prevent overfitting by randomly setting a fraction of input units to zero during training. This helps the model generalize better to new, unseen data by reducing the dependency on specific neurons and forcing the model to learn more robust features that are not reliant on any particular set of neurons.
+
+3. In the plot showing actual vs predicted stock prices, what does it indicate if the predicted line closely follows the actual line?
+
+   If the predicted line closely follows the actual line, it indicates that the model is performing well and accurately capturing the patterns in the stock price data. This means that the model is generalizing well and making reliable predictions. If there are significant deviations, it suggests that the model may need further tuning or that it is not capturing some aspects of the data effectively.
